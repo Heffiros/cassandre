@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cassandre - Plateforme Litteraire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(2 6 23);
+        color: rgb(241 245 249);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f8fafc;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #e2e8f0;
+        border-radius: 10px;
+        transition: background 0.2s ease;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #cbd5e1;
+      }
+
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #e2e8f0 #f8fafc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative overflow-hidden min-h-screen bg-slate-950 text-slate-100">
+      <div class="pointer-events-none fixed -top-32 -left-32 w-96 h-96 rounded-full bg-yellow-500/10 blur-3xl"></div>
+      <div class="pointer-events-none fixed -bottom-32 -right-32 w-[32rem] h-[32rem] rounded-full bg-blue-500/10 blur-3xl"></div>
+
+      <section class="relative flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <img src="./logo.png" alt="Cassandre" class="w-20 h-20 object-contain mb-6 opacity-90" />
+
+        <p class="text-xs uppercase tracking-[0.2em] text-yellow-400/80 mb-4 font-medium">Cassandre</p>
+
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
+          Depoussiererez vos plumes.
+        </h1>
+
+        <p class="mt-6 text-lg text-slate-400 max-w-xl leading-relaxed">
+          Cassandre est la scene ou vos histoires prennent vie - ecrivez, participez aux contests,
+          progressez, et faites-vous lire par ceux qui aiment vraiment les mots.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-10">
+          <button type="button" class="px-8 py-4 bg-yellow-400 text-slate-900 font-bold rounded-xl text-base shadow-lg shadow-yellow-500/20 cursor-default">
+            Rejoindre la plateforme
+          </button>
+          <button type="button" class="px-8 py-4 border border-slate-600 text-slate-300 font-semibold rounded-xl text-base cursor-default">
+            Se connecter
+          </button>
+        </div>
+
+        <div class="absolute bottom-10 flex flex-col items-center gap-2 text-slate-600">
+          <span class="text-xs tracking-widest uppercase">Decouvrir</span>
+          <div class="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent"></div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+          <p class="text-xs uppercase tracking-[0.2em] text-yellow-400/80 mb-4 text-center font-medium">Le projet</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-6">
+            Une scene dediee aux auteurs qui meritent d'etre lus
+          </h2>
+          <p class="text-slate-400 text-center max-w-2xl mx-auto text-lg leading-relaxed mb-16">
+            Trop d'histoires dorment dans des tiroirs ou se perdent dans le bruit des reseaux generiques.
+            Cassandre est un espace dedie - intime, exigeant, vivant - ou chaque texte a sa place
+            et chaque lecteur compte vraiment.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-yellow-400/10 flex items-center justify-center text-yellow-400 text-xl">✍️</div>
+              <h3 class="text-white font-semibold text-lg">Ecrivez</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Redigez vos histoires avec un editeur dedie, chapitre par chapitre. Gardez vos brouillons, affinez votre
+                plume, publiez quand vous etes pret.
+              </p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-purple-400/10 flex items-center justify-center text-purple-400 text-xl">🌌</div>
+              <h3 class="text-white font-semibold text-lg">Partagez</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Ouvrez vos univers, offrez vos recits au regard des autres. Ici, partager c'est grandir - chaque lecture
+                est un cadeau, chaque retour une richesse.
+              </p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-400/10 flex items-center justify-center text-blue-400 text-xl">⚔️</div>
+              <h3 class="text-white font-semibold text-lg">Affrontez-vous</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Participez aux contests thematiques. Un sujet, une deadline, les meilleurs textes remontent. La communaute
+                vote, le podium parle.
+              </p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400 text-xl">📖</div>
+              <h3 class="text-white font-semibold text-lg">Lisez</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Explorez la bibliotheque, decouvrez de nouveaux auteurs, laissez des commentaires qui comptent. Pas
+                d'algorithme - juste de la lecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6 bg-slate-900/40">
+        <div class="max-w-5xl mx-auto">
+          <p class="text-xs uppercase tracking-[0.2em] text-yellow-400/80 mb-4 text-center font-medium">Progression</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-4">Chaque mot compte.</h2>
+          <p class="text-slate-400 text-center max-w-xl mx-auto mb-16 leading-relaxed">
+            Publier, commenter, gagner un contest, terminer une mission - tout vous fait progresser.
+            La plateforme reconnait les auteurs qui s'investissent vraiment.
+          </p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 text-center space-y-2">
+              <div class="text-3xl">🏆</div>
+              <p class="text-white font-semibold text-sm">Contests</p>
+              <p class="text-slate-500 text-xs">Gagnez des victoires officielles</p>
+            </div>
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 text-center space-y-2">
+              <div class="text-3xl">⭐</div>
+              <p class="text-white font-semibold text-sm">Points & niveaux</p>
+              <p class="text-slate-500 text-xs">Progressez a chaque action</p>
+            </div>
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 text-center space-y-2">
+              <div class="text-3xl">🎖️</div>
+              <p class="text-white font-semibold text-sm">Badges</p>
+              <p class="text-slate-500 text-xs">Deverrouillez des recompenses rares</p>
+            </div>
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 text-center space-y-2">
+              <div class="text-3xl">🎯</div>
+              <p class="text-white font-semibold text-sm">Missions</p>
+              <p class="text-slate-500 text-xs">Relevez des defis hebdomadaires</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-xs uppercase tracking-[0.2em] text-yellow-400/80 mb-4 font-medium">L'equipe</p>
+          <h2 class="text-3xl font-bold text-white mb-16">Fait avec passion, par des amoureux des mots.</h2>
+
+          <div class="flex justify-center">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 flex flex-col items-center gap-4 max-w-xs w-full">
+              <img
+                src="https://s3.eu-west-3.amazonaws.com/s3.sharedyourstories/wonderland/profile/image.jpg"
+                alt="Fondateur"
+                class="w-20 h-20 rounded-full border-2 border-slate-600 object-cover"
+              />
+              <div class="space-y-1 text-center">
+                <p class="text-white font-semibold text-lg">Fondateur</p>
+                <p class="text-slate-400 text-sm">Developpeur</p>
+                <p class="text-slate-500 text-xs mt-2">
+                  "J'ai cree Cassandre parce que les bonnes histoires meritent mieux qu'un Google Doc."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 px-6 bg-slate-900/40">
+        <div class="max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-white text-center mb-8">Nous contacter</h2>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div class="flex items-center gap-2 px-6 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">
+              <span>📧</span>
+              <span>sharedyourstories@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-2 px-6 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">
+              <span>in</span>
+              <span>LinkedIn</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-white mb-4">Votre histoire commence ici.</h2>
+          <p class="text-slate-400 mb-10 text-lg">
+            Rejoignez la plateforme, publiez votre premier texte, et faites-vous lire.
+          </p>
+          <button type="button" class="inline-block px-10 py-4 bg-yellow-400 text-slate-900 font-bold rounded-xl text-lg shadow-xl shadow-yellow-500/20 cursor-default">
+            Creer mon compte gratuitement
+          </button>
+        </div>
+      </section>
+
+      <footer class="border-t border-slate-800/60 py-8 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-sm">
+          <div class="flex items-center gap-2">
+            <img src="./logo.png" alt="Cassandre" class="w-6 h-6 object-contain opacity-60" />
+            <span>Cassandre - Plateforme litteraire</span>
+          </div>
+          <div class="flex gap-6">
+            <span>Connexion</span>
+            <span>Inscription</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
